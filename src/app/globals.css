@@ -73,6 +73,38 @@
   }
 }
 
+main {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  border: 1px solid black;
+  height: 800px;
+  width: 800px;
+  overflow: hidden;
+}
+
+.spot {
+  margin: 10px;
+  height: 250px;
+  width: 250px;
+  background-color: yellow;
+}
+
+.box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: hotpink;
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -82,6 +114,7 @@
 html,
 body {
   max-width: 100vw;
+  max-height: 100vh;
   overflow-x: hidden;
 }
 
@@ -98,6 +131,9 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+.full-height-container {
+  height: 100vh;
 }
 
 @media (prefers-color-scheme: dark) {
